@@ -12,12 +12,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @Html.ActionLink("First Name", "Index", new { sortOrder = ViewBag.NameSortParm })
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
+        @*@Html.DisplayNameFor(model => model.FirstName*@
+        <th>Last Name
         </th>
-        <th></th>
+       <th></th>
+    @*@Html.DisplayNameFor(model => model.LastName)*@
     </tr>
 
 @foreach (var item in Model) {

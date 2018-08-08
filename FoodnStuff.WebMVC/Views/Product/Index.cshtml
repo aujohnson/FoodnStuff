@@ -15,8 +15,9 @@
             @Html.DisplayNameFor(model => model.ProductName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UPC)
+            @Html.ActionLink("UPC", "Index", new { sortOrder = ViewBag.NameSortParm })
         </th>
+            @*@Html.DisplayNameFor(model => model.UPC)*@
         <th>
             @Html.DisplayNameFor(model => model.Quantity)
         </th>
